@@ -1,9 +1,4 @@
 <!DOCTYPE HTML>
-<!--
-	Dimension by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
 <html>
 	<head>
 		<title>ABHISHEK ANAND</title>
@@ -11,6 +6,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<link rel="stylesheet" href="assets/css/typer.css">
+		<link rel="stylesheet" href="assets/css/image.css">
 		<link href="images/logo.png" rel="icon">
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
@@ -76,6 +72,67 @@
 						<!-- Work -->
 							<article id="work">
 								<h2 class="major">Work</h2>
+								<h1>GALLERY</h1>
+								<!-- image slider start -->
+    <div class="slider">
+        <div class="slides">
+           <!-- radio button start  -->
+           <input type="radio" name="radio-btn" id="radio1">
+           <input type="radio" name="radio-btn" id="radio2">
+           <input type="radio" name="radio-btn" id="radio3">
+           <input type="radio" name="radio-btn" id="radio4"> 
+           <!-- radio button end -->
+           <!-- image slide start -->
+           <div class="slide first">
+               <img src="1.png" alt="">
+           </div>
+           <div class="slide">
+               <img src="2.jpg" alt="">
+           </div>
+           <div class="slide">
+            <img src="3.jpg" alt="">
+        </div>
+        <div class="slide">
+            <img src="4.png" alt="">
+        </div>
+           <!-- image slide end -->
+           <!-- automatic navigation start -->
+           <div class="navigation-auto">
+               <div class="auto-btn1"></div>
+               <div class="auto-btn2"></div>
+               <div class="auto-btn3"></div>
+               <div class="auto-btn4"></div>
+
+           </div>
+
+        
+           <!-- automatic navigation end -->
+
+           
+        </div>
+        <!-- manual nagivation start -->
+        <div class="navigation-manual">
+            <label for="radio1" class="manual-btn"></label>
+            <label for="radio2" class="manual-btn"></label>
+            <label for="radio3" class="manual-btn"></label>
+            <label for="radio4" class="manual-btn"></label>
+        </div>
+        <!-- manual navigation end -->
+    </div>
+
+    <!-- image slider end -->
+
+    <script type="text/javascript">
+        var counter = 1;
+        setInterval(function(){
+           document.getElementById('radio' + counter).checked = true;
+           counter++;
+           if(counter > 4){
+               counter = 1;
+           }
+        },2000);
+    </script>
+								
 								<div>
 									<header>
 										<h2>vector art</h2>
